@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded == true)
         {
-            rigidbody.AddForce(Vector3.up *250.0f);
+            rigidbody.AddForce(Vector3.up *280.0f);
             isGrounded = false;
         }
     }

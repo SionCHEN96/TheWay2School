@@ -44,6 +44,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   speed: 2
+--- !u!114 &8634953290646299878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250495729206069938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc582e787b7796a48852d2727ba55a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightPowerSlider: {fileID: 0}
 --- !u!1001 &250495729206103464
 PrefabInstance:
   m_ObjectHideFlags: 0

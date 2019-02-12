@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.Find("Player").transform;
         distance = transform.position - target.position;
     }
 

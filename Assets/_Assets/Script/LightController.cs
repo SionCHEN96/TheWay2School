@@ -21,7 +21,7 @@ public class LightController : MonoBehaviour
         gameObject.GetComponent<Light>().spotAngle = 80*Mathf.Cos((Mathf.PI/2)*( 1-lightPowerSlider.value/20));
         gameObject.GetComponent<Light>().intensity = lightPowerSlider.value / 5 + 1f;
 
-        Debug.Log("lightRange:" + gameObject.GetComponent<Light>().spotAngle);
-        Debug.Log("LightIntensity:" + gameObject.GetComponent<Light>().intensity);
+        //Debug.Log("lightRange:" + gameObject.GetComponent<Light>().spotAngle);
+        //Debug.Log("LightIntensity:" + gameObject.GetComponent<Light>().intensity);
     }
 }

@@ -119,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (isRun) { speedMult = 3; }
-        else if (isCrawl) { speedMult = 0.5f; }
+        else if (isCrawl) { speedMult = 0.6f; }
         else if (inputX>0.5||inputX<-0.5){ speedMult = 1; }
 
 

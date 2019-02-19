@@ -6,6 +6,7 @@ using UnityEngine;
 public class TipsControllerLv1 : MonoBehaviour
 {
     public Text tipText;
+    public Text themeName;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class TipsControllerLv1 : MonoBehaviour
         if (gameObject.name == "WelcomeTrigger" && other.name == "Player")
         {
             tipText.text = "help the kid go to school\n press LEFT or RIGHT";
+            themeName.text = "Theme 1\nThe First Day to School";
             SetTipToOne();
         }
 

@@ -131,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.name == "CrawlTrigger")
         {
-            Debug.Log("Under tile!");
+           // Debug.Log("Under tile!");
             isUnderTile = true;
         }
     }
@@ -140,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.name == "CrawlTrigger")
         {
-            Debug.Log("Under tile!");
+           // Debug.Log("Under tile!");
             isUnderTile = false;
         }
     }

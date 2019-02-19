@@ -61,10 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Assets\Script\CameraController.cs" />
+    <Compile Include="Assets\_Assets\Script\FallTileController.cs" />
     <Compile Include="Assets\_Assets\Script\LevelManager.cs" />
     <Compile Include="Assets\_Assets\Script\LightController.cs" />
     <Compile Include="Assets\_Assets\Script\PlayerHealth.cs" />
     <Compile Include="Assets\_Assets\Script\PlayerMovement.cs" />
+    <Compile Include="Assets\_Assets\Script\RaftController.cs" />
     <Compile Include="Assets\_Assets\Script\SucessController.cs" />
     <Compile Include="Assets\_Assets\Script\TileController.cs" />
     <Compile Include="Assets\_Assets\Script\TipsControllerLv1.cs" />

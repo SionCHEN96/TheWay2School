@@ -10,23 +10,30 @@ public class PlayerHealth : MonoBehaviour
     public GameObject deathMenu;
     private float playerHealth;
     private bool isDead = false;
+    bool isOnGame;
     void Start()
     {
-        LightPowerSlider.value = 20f;
         deathMenu.SetActive(false);
+        isOnGame = false;
         Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        LightPowerSlider.value-=Time.deltaTime;
-        //Debug.Log(LightPowerSlider.value);
-        playerHealth = LightPowerSlider.value;
-        Debug.Log("Player health:" + playerHealth);
-        if (playerHealth <= 0)
+        if (Input.anyKeyDown)
         {
-            Die();
+            isOnGame = true;
+        }
+        if (isOnGame)
+        {
+            LightPowerSlider.value -= Time.deltaTime;
+            playerHealth = LightPowerSlider.value;
+            //Debug.Log("Player health:" + playerHealth);
+            if (playerHealth <= 0)
+            {
+                Die();
+            }
         }
     }
 

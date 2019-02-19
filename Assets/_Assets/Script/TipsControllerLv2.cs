@@ -6,13 +6,14 @@ using UnityEngine;
 public class TipsControllerLv2 : MonoBehaviour
 {
     public Text tipText;
-    // Start is called before the first frame update
+    public Text themeName;
 
     private void OnTriggerEnter(Collider other)
     {   //welcome
         if (gameObject.name == "FlashlightTrigger" && other.name == "Player")
         {
             tipText.text = "You can see the POWER of your flashlight\n at the TOP of the screen";
+            themeName.text = "Theme 2\nBattered flashlight";
             SetTipToOne();
         }
 

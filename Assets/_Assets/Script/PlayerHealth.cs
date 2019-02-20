@@ -42,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
         if (other.CompareTag("Batt"))
         {
             other.gameObject.SetActive(false);
-            LightPowerSlider.value = 20;
+            LightPowerSlider.value = LightPowerSlider.maxValue;
         }
 
         if (other.name == "DeathTrigger")

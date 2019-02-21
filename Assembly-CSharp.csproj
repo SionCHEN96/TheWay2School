@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Assets\Script\CameraController.cs" />
+    <Compile Include="Assets\_Assets\Script\ControlPanelManager.cs" />
     <Compile Include="Assets\_Assets\Script\FallTileController.cs" />
     <Compile Include="Assets\_Assets\Script\LevelManager.cs" />
     <Compile Include="Assets\_Assets\Script\LightController.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\_Assets\Script\TileController.cs" />
     <Compile Include="Assets\_Assets\Script\TipsControllerLv1.cs" />
     <Compile Include="Assets\_Assets\Script\TipsControllerLv2.cs" />
+    <Compile Include="Assets\_Assets\Script\TipsControllerLv3.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />

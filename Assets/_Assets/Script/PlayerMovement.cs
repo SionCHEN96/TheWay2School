@@ -7,10 +7,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
+    public float speed = 2.0f;
+    public AudioClip[] movementAudio;
+    AudioSource audio;
+
+
     private Rigidbody rigidbody;
 
     float inputX;
-    public float speed=2.0f;
     private bool isRun=false;
     private bool isCrawl=false;
 
@@ -25,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = this.GetComponent<Animator>();
         rigidbody = this.GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -44,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
                 isRun = false;
             }
         }
+
 
         //if is crawl
         if (!isRun)
@@ -100,7 +106,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         isGrounded = true;
-        animator.SetBool("Jump", false);
     }
 
 
@@ -118,9 +123,14 @@ public class PlayerMovement : MonoBehaviour
             dir = 1;
         }
 
-        if (isRun) { speedMult = 3; }
-        else if (isCrawl) { speedMult = 0.6f; }
-        else if (inputX>0.5||inputX<-0.5){ speedMult = 1; }
+        if (isRun) { speedMult = 3;
+
+        }
+        else if (isCrawl) {
+            speedMult = 0.6f;
+        }
+        else if (inputX > 0.5 || inputX < -0.5) { speedMult = 1;
+        } 
 
 
         this.transform.rotation = Quaternion.Euler(0, dir*90, 0);
@@ -144,5 +154,13 @@ public class PlayerMovement : MonoBehaviour
             isUnderTile = false;
         }
     }
+
+    //IEnumerator AudioPlayDelay(int type, float delay)
+    //{
+    //    yield return new WaitForSeconds(delay);
+    //    audio.loop = true;
+    //    audio.clip = movementAudio[type];
+    //    audio.Play();
+    //}
 
 }

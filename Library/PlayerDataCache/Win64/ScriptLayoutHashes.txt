@@ -1,10 +1,11 @@
 Win64
 PlayerPath?
-E:/TheWay2School/TheWay2School.exe
+E:/GameBuild/TheWay2School.exe
 SceneListBegin?
 Assets/Scenes/TopicScene.unity
 Assets/Scenes/Level01.unity
 Assets/Scenes/Level02.unity
+Assets/Scenes/Level03.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 372b037643e3a0f3972f6b2a7b370088 Assembly-CSharp.dll:.SucessController
@@ -127,6 +128,8 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:ProBuilder2.Examples.HueCube
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RaftController
+6ccbcf86f4b93b8a0cadf807645f3a2e Assembly-CSharp.dll:.ControlPanelManager
 25f17a4b4d369070ef39e348ac765f7b Assembly-CSharp.dll:.PlayerHealth
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 109dd12b7d8dc4016f0271e8e6de2239 ProBuilderCore-Unity5.dll:ProBuilder2.Common.pb_BezierShape
@@ -178,7 +181,9 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 c80d3238226b1d162e3ff2069e0972ed Assembly-CSharp.dll:ProBuilder2.Examples.CameraControls
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+a6619a6d20fab90ec5670a9b2ebb962f Assembly-CSharp.dll:.TipsControllerLv3
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FallTileController
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 a6619a6d20fab90ec5670a9b2ebb962f Assembly-CSharp.dll:.TipsControllerLv2

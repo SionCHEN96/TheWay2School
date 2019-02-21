@@ -45,7 +45,7 @@ public class PlayerHealth : MonoBehaviour
             LightPowerSlider.value = LightPowerSlider.maxValue;
         }
 
-        if (other.name == "DeathTrigger")
+        if (other.CompareTag("DeathTile"))
         {
             Die();
         }

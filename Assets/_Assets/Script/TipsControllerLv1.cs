@@ -46,6 +46,12 @@ public class TipsControllerLv1 : MonoBehaviour
             tipText.text = "hold CTRL to crawl";
             SetTipToOne();
         }
+
+        if (gameObject.name == "SchoolTrigger" && other.name == "Player")
+        {
+            tipText.text = "Well done, you are arriving school!";
+            SetTipToOne();
+        }
     }
 
     private void OnTriggerExit(Collider other)

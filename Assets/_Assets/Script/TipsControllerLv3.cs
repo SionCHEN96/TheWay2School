@@ -16,9 +16,15 @@ public class TipsControllerLv3 : MonoBehaviour
             SetTipToOne();
         }
 
-        if (gameObject.CompareTag("DeathTile")&& other.name == "Player")
+        if (gameObject.name=="FireflyTrigger"&& other.name == "Player")
         {
-            themeName.text = "Theme Demo\nThe Road Not Taken";
+            tipText.text = "WOW! It is firefly !";
+            SetTipToOne();
+        }
+
+        if (gameObject.name == "FireflyByeTrigger" && other.name == "Player")
+        {
+            tipText.text = "Goodbye, firefly !";
             SetTipToOne();
         }
 
@@ -32,9 +38,6 @@ public class TipsControllerLv3 : MonoBehaviour
         }
         Invoke("SetTipToZero", 1f);
     }
-
-
-
 
     void SetTipToZero()
     {

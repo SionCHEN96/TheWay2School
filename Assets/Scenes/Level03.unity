@@ -1611,6 +1611,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 45651844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &46482237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 46482238}
+  - component: {fileID: 46482241}
+  - component: {fileID: 46482240}
+  - component: {fileID: 46482239}
+  m_Layer: 0
+  m_Name: FireflyTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &46482238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46482237}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 119.29, y: -5.52, z: -1}
+  m_LocalScale: {x: 6.5002003, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1238993393}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &46482239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46482237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2382822da60c8134b9e7e53fdb5d95e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipText: {fileID: 4288055582928069196}
+  themeName: {fileID: 342421209}
+--- !u!65 &46482240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46482237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &46482241
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46482237}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &55014587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15106,7 +15174,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-774942
+  m_Name: pb_Mesh-24334
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -17893,7 +17961,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-77264
+  m_Name: pb_Mesh-21804
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -18112,6 +18180,74 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91401ba63f261e64385344be2a4eb88b, type: 3}
+--- !u!1 &503076500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503076501}
+  - component: {fileID: 503076504}
+  - component: {fileID: 503076503}
+  - component: {fileID: 503076502}
+  m_Layer: 0
+  m_Name: FireflyByeTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &503076501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503076500}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 181.09, y: -5.52, z: -1}
+  m_LocalScale: {x: 6.5002003, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1238993393}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &503076502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503076500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2382822da60c8134b9e7e53fdb5d95e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipText: {fileID: 4288055582928069196}
+  themeName: {fileID: 342421209}
+--- !u!65 &503076503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503076500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &503076504
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503076500}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &504912263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32963,6 +33099,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1766109536}
+    - target: {fileID: 1683296967950347830, guid: ebbc0288aa28df54cb342e968aebc41f,
+        type: 3}
+      propertyPath: lightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
     - target: {fileID: 4481826502137269260, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -32973,11 +33114,6 @@ PrefabInstance:
       propertyPath: m_SpotAngle
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: 1683296967950347830, guid: ebbc0288aa28df54cb342e968aebc41f,
-        type: 3}
-      propertyPath: lightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebbc0288aa28df54cb342e968aebc41f, type: 3}
 --- !u!43 &928717513
@@ -43903,6 +44039,8 @@ Transform:
   - {fileID: 767983785}
   - {fileID: 65725558}
   - {fileID: 1119831817}
+  - {fileID: 46482238}
+  - {fileID: 503076501}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54465,7 +54603,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-774782
+  m_Name: pb_Mesh-22568
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -55531,7 +55669,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-778106
+  m_Name: pb_Mesh-20718
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -70287,7 +70425,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-7908
+  m_Name: pb_Mesh-22956
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -75124,16 +75262,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_MaxValue
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Value
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 4288055583313817040, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -75259,59 +75387,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 386601198}
-    - target: {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: lightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 386601198}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 386601198}
-    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
     - target: {fileID: 6860908628535149647, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Theme Demo
-
-        The Road Not Taken'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288055583104259301, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Text
-      value: You arrive at school in safety
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419963579630818530, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Text
-      value: 'You lose your way in the dark
-
-        You are absent from school today'
       objectReference: {fileID: 0}
     - target: {fileID: 3285522341391943157, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -75343,9 +75422,80 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level03
       objectReference: {fileID: 0}
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Value
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Theme Demo
+
+        The Road Not Taken'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: lightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386601198}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288055583104259301, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: You arrive at school in safety
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386601198}
+    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419963579630818530, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: 'You lose your way in the dark
+
+        You are absent from school today'
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: daf457a0dcc516b42a1c2c41f63186b0, type: 3}
+--- !u!114 &4288055582928069196 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2339729904135815166, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4288055582928069195}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6733925324357639661
 PrefabInstance:
   m_ObjectHideFlags: 0

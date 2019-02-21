@@ -97,14 +97,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded == true)
         {
-            rigidbody.AddForce(Vector3.up *280.0f);
+            rigidbody.AddForce(Vector3.up *280.0f);  
             isGrounded = false;
+            //animator.SetBool("Jump", false);
         }
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
+        animator.SetBool("Jump", false);
         isGrounded = true;
     }
 

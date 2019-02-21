@@ -23532,6 +23532,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1766109536}
+    - target: {fileID: 1683296967950347830, guid: ebbc0288aa28df54cb342e968aebc41f,
+        type: 3}
+      propertyPath: lightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
     - target: {fileID: 4481826502137269260, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -23542,11 +23547,6 @@ PrefabInstance:
       propertyPath: m_SpotAngle
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: 1683296967950347830, guid: ebbc0288aa28df54cb342e968aebc41f,
-        type: 3}
-      propertyPath: lightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebbc0288aa28df54cb342e968aebc41f, type: 3}
 --- !u!1001 &929776479
@@ -32373,6 +32373,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5845840464855593456, guid: ac828459c4b389b4db610e535c425792,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac828459c4b389b4db610e535c425792, type: 3}
 --- !u!43 &1253748268
@@ -33320,12 +33325,12 @@ PrefabInstance:
     - target: {fileID: 6822150909845091473, guid: ac828459c4b389b4db610e535c425792,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 109.91
+      value: 110.06
       objectReference: {fileID: 0}
     - target: {fileID: 6822150909845091473, guid: ac828459c4b389b4db610e535c425792,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 13.83
       objectReference: {fileID: 0}
     - target: {fileID: 6822150909845091473, guid: ac828459c4b389b4db610e535c425792,
         type: 3}
@@ -54536,36 +54541,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 386601198}
+    - target: {fileID: 4288055582215156736, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level03
+      objectReference: {fileID: 0}
     - target: {fileID: 4288055582177096176, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 386601198}
-    - target: {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: lightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 386601198}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 386601198}
-    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
     - target: {fileID: 6860908628535149647, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_IsActive
@@ -54595,6 +54580,43 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: lightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386601198}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288055583104259301, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: You arrived at school in safety
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386601198}
+    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419963579630818530, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: 'You lose your way in the dark
+
+        You are absent from school today'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0, type: 3}

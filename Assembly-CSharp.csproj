@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Assets\Script\BattAudio.cs" />
     <Compile Include="Assets\_Assets\Script\CameraController.cs" />
     <Compile Include="Assets\_Assets\Script\ControlPanelManager.cs" />
     <Compile Include="Assets\_Assets\Script\FallTileController.cs" />

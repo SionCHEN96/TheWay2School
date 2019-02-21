@@ -37,20 +37,22 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("Batt"))
+        if (collision.gameObject.CompareTag("Batt"))
         {
-            other.gameObject.SetActive(false);
             LightPowerSlider.value = LightPowerSlider.maxValue;
         }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
         if (other.CompareTag("DeathTile"))
         {
             Die();
         }
     }
-
     void Die()
     {
         isDead = true;

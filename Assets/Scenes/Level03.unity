@@ -33052,7 +33052,7 @@ PrefabInstance:
     - target: {fileID: 4481826503110780620, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 4481826503110780620, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
@@ -33104,15 +33104,30 @@ PrefabInstance:
       propertyPath: lightPowerSlider
       value: 
       objectReference: {fileID: 743278213}
-    - target: {fileID: 4481826502137269260, guid: ebbc0288aa28df54cb342e968aebc41f,
+    - target: {fileID: 4481826502137269299, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
+      propertyPath: m_Shadows.m_NormalBias
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481826502137269299, guid: ebbc0288aa28df54cb342e968aebc41f,
+        type: 3}
+      propertyPath: m_Shadows.m_Bias
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4481826502137269299, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_SpotAngle
-      value: 80
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481826502137269299, guid: ebbc0288aa28df54cb342e968aebc41f,
+        type: 3}
+      propertyPath: m_Shadows.m_NearPlane
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481826502137269299, guid: ebbc0288aa28df54cb342e968aebc41f,
+        type: 3}
+      propertyPath: m_Range
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebbc0288aa28df54cb342e968aebc41f, type: 3}
@@ -39742,6 +39757,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 1.5818287
       objectReference: {fileID: 0}
+    - target: {fileID: 2095868856607984188, guid: fac0ef5b3d80d784eb048566cd377f09,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 512917904894371770, guid: fac0ef5b3d80d784eb048566cd377f09,
         type: 3}
       propertyPath: m_Size.x
@@ -39766,11 +39786,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2095868856607984188, guid: fac0ef5b3d80d784eb048566cd377f09,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fac0ef5b3d80d784eb048566cd377f09, type: 3}
@@ -75257,10 +75272,27 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Theme Demo
+
+        The Road Not Taken'
+      objectReference: {fileID: 0}
     - target: {fileID: 4015352818256744602, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Value
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4288055583313817040, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -75390,7 +75422,7 @@ PrefabInstance:
     - target: {fileID: 6860908628535149647, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3285522341391943157, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -75421,23 +75453,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_MaxValue
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Value
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Theme Demo
-
-        The Road Not Taken'
       objectReference: {fileID: 0}
     - target: {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}

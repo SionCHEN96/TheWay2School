@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-E:/GameBuid/TheWay2School.exe
+E:/GameBuild/TheWay2School.exe
 SceneListBegin?
 Assets/Scenes/TopicScene.unity
 Assets/Scenes/Level01.unity
@@ -124,6 +124,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LevelManager
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 a6619a6d20fab90ec5670a9b2ebb962f Assembly-CSharp.dll:.TipsControllerLv1
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BattAudio
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:ProBuilder2.Examples.HueCube
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
@@ -189,4 +190,3 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 a6619a6d20fab90ec5670a9b2ebb962f Assembly-CSharp.dll:.TipsControllerLv2
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 5d58e2c6538e97bb37bbc552307c320c Assembly-CSharp.dll:ProBuilder2.Examples.RuntimeEdit
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BattAudio

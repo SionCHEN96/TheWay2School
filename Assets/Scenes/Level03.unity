@@ -33099,11 +33099,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1766109536}
-    - target: {fileID: 1683296967950347830, guid: ebbc0288aa28df54cb342e968aebc41f,
-        type: 3}
-      propertyPath: lightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
     - target: {fileID: 4481826502137269299, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_Shadows.m_NormalBias
@@ -33129,6 +33124,11 @@ PrefabInstance:
       propertyPath: m_Range
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 1683296967950347830, guid: ebbc0288aa28df54cb342e968aebc41f,
+        type: 3}
+      propertyPath: lightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebbc0288aa28df54cb342e968aebc41f, type: 3}
 --- !u!43 &928717513
@@ -33457,7 +33457,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-30948
+  m_Name: pb_Mesh-34002
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -62407,7 +62407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476174, guid: d75129a037a73e445b35fb4dbd10dbef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.71
+      value: -1.89
       objectReference: {fileID: 0}
     - target: {fileID: 476174, guid: d75129a037a73e445b35fb4dbd10dbef, type: 3}
       propertyPath: m_LocalRotation.x
@@ -69101,6 +69101,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8634953290646299878, guid: 06e69543ba6566b42a935420e71e6db1,
+        type: 3}
+      propertyPath: LightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
+    - target: {fileID: 8634953290646299878, guid: 06e69543ba6566b42a935420e71e6db1,
+        type: 3}
+      propertyPath: deathMenu
+      value: 
+      objectReference: {fileID: 559283682}
     - target: {fileID: 1416869202376309931, guid: 06e69543ba6566b42a935420e71e6db1,
         type: 3}
       propertyPath: anim.idle
@@ -69116,16 +69126,6 @@ PrefabInstance:
       propertyPath: speed
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8634953290646299878, guid: 06e69543ba6566b42a935420e71e6db1,
-        type: 3}
-      propertyPath: LightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
-    - target: {fileID: 8634953290646299878, guid: 06e69543ba6566b42a935420e71e6db1,
-        type: 3}
-      propertyPath: deathMenu
-      value: 
-      objectReference: {fileID: 559283682}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06e69543ba6566b42a935420e71e6db1, type: 3}
 --- !u!1001 &1927470436
@@ -75272,28 +75272,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Theme Demo
-
-        The Road Not Taken'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4015352818256744602, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_MaxValue
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Value
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 4288055583313817040, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -75399,6 +75377,73 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6860908628535149647, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015352818256744602, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285522341391943157, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: lightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
+    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Theme Demo
+
+        The Road Not Taken'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790508247886905875, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386601198}
+    - target: {fileID: 6790508247886905875, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386601198}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618169237420043235, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386601198}
+    - target: {fileID: 4618169237420043235, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618169237420043235, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level03
+      objectReference: {fileID: 0}
     - target: {fileID: 4288055582871452696, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -75409,70 +75454,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4288055582215156736, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 386601198}
     - target: {fileID: 4288055582177096176, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 386601198}
-    - target: {fileID: 6860908628535149647, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3285522341391943157, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6790508247886905875, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 4288055582215156736, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 386601198}
-    - target: {fileID: 6790508247886905875, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
+      propertyPath: m_MaxValue
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 4618169237420043235, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 386601198}
-    - target: {fileID: 4618169237420043235, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 4618169237420043235, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: lightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 386601198}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level03
+      propertyPath: m_Value
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4288055583104259301, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}

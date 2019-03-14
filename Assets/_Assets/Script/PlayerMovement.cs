@@ -8,13 +8,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
     public float speed = 2.0f;
+    public float jumpPower = 280.0f;
     public AudioClip[] movementAudio;
-    AudioSource audio;
 
 
     private Rigidbody rigidbody;
 
     float inputX;
+   // float inputY;
     private bool isRun=false;
     private bool isCrawl=false;
 
@@ -29,13 +30,14 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = this.GetComponent<Animator>();
         rigidbody = this.GetComponent<Rigidbody>();
-        audio = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         inputX = Input.GetAxis("Horizontal");
+
 
         //if is run
         if (!isCrawl)
@@ -54,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         //if is crawl
         if (!isRun)
         {
-            if ((Input.GetKey(KeyCode.LeftControl) && inputX != 0))
+            if ((Input.GetKey(KeyCode.LeftControl) && (inputX != 0)))
             {
                 isCrawl = true;
                 this.GetComponent<CapsuleCollider>().center = new Vector3(0, 0.5f, 0);
@@ -97,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded == true)
         {
-            rigidbody.AddForce(Vector3.up *280.0f);  
+            rigidbody.AddForce(Vector3.up *jumpPower);  
             isGrounded = false;
             //animator.SetBool("Jump", false);
         }
@@ -107,7 +109,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         animator.SetBool("Jump", false);
-        isGrounded = true;
     }
 
 
@@ -156,6 +157,19 @@ public class PlayerMovement : MonoBehaviour
             isUnderTile = false;
         }
     }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Tile"))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+    }
+
 
     //IEnumerator AudioPlayDelay(int type, float delay)
     //{

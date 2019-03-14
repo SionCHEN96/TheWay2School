@@ -59,8 +59,8 @@ public class PlayerMovement : MonoBehaviour
             if ((Input.GetKey(KeyCode.LeftControl) && (inputX != 0)))
             {
                 isCrawl = true;
-                this.GetComponent<CapsuleCollider>().center = new Vector3(0, 0.5f, 0);
-                this.GetComponent<CapsuleCollider>().height = 0.3f;
+                this.GetComponent<CapsuleCollider>().center = new Vector3(0, 0.4f, 0);
+                this.GetComponent<CapsuleCollider>().height = 0.4f;
             }
             else if(!Input.GetKey(KeyCode.LeftControl)&&!isUnderTile)
             {
@@ -101,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rigidbody.AddForce(Vector3.up *jumpPower);  
             isGrounded = false;
+            rigidbody.mass = 5;
             //animator.SetBool("Jump", false);
         }
     }
@@ -162,6 +163,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Tile"))
         {
+            rigidbody.mass = 1;
             isGrounded = true;
         }
         else

@@ -23,7 +23,7 @@ public class TipsControllerLvHK : MonoBehaviour
         if (gameObject.name == "WelcomeTrigger" && other.name == "Player")
         {
             tipText.text = "press LEFT or RIGHT to move";
-           // themeName.text = "Theme 1\nThe First Day to School";
+           themeName.text = "Theme \nHong Kong";
             SetTipToOne();
         }
 

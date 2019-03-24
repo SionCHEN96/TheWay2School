@@ -14,14 +14,14 @@ public class LightController : MonoBehaviour
     {
         mapValue = lightPowerSlider.value / 20.0f;
         gameObject.GetComponent<Light>().spotAngle = 80f;
-        gameObject.GetComponent<Light>().intensity = 6f;
+        gameObject.GetComponent<Light>().intensity = 4f;
     }
 
     // Update is called once per frame
     void Update()
     {
         gameObject.GetComponent<Light>().spotAngle = 80*Mathf.Cos((Mathf.PI/2)*( 1-lightPowerSlider.value/mapValue/20));
-        gameObject.GetComponent<Light>().intensity = lightPowerSlider.value/mapValue / 3.2f + 1f;
+        gameObject.GetComponent<Light>().intensity = lightPowerSlider.value/mapValue / 5f + 1f;
 
         //Debug.Log("lightRange:" + gameObject.GetComponent<Light>().spotAngle);
         //Debug.Log("LightIntensity:" + gameObject.GetComponent<Light>().intensity);

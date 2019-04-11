@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     private float playerHealth;
     private bool isDead = false;
     bool isOnGame;
+
     void Start()
     {
         deathMenu.SetActive(false);

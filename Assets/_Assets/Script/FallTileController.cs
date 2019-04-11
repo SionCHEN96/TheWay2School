@@ -4,26 +4,36 @@ using UnityEngine;
 
 public class FallTileController : MonoBehaviour
 {
-    private float fallDelay = .5f;
+    private float fallDelay = 10f;
+    bool isFalling = false;
+
+
+    private void Start()
+    {
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player")
+        Debug.Log("Player is comming");
+        if (other.CompareTag("Player"))
         {
-            StartCoroutine(FallDown());
+            isFalling = true;
         }
     }
 
-    IEnumerator FallDown()
+    private void Update()
     {
-        yield return new WaitForSeconds(fallDelay);
-       gameObject.GetComponentInParent<Rigidbody>().isKinematic = false;
+        if (isFalling)
+        {
+            Invoke("FallDown", fallDelay);
+        }
+    }
+
+    void FallDown()
+    {
+        gameObject.GetComponentInParent<Rigidbody>().isKinematic = false;
         gameObject.GetComponentInParent<Rigidbody>().useGravity = true;
 
-        yield return new WaitForSeconds(5);
-        gameObject.GetComponentInParent<Rigidbody>().isKinematic = true;
-
-
-        yield return new WaitForSeconds(2);
         gameObject.SetActive(false);
     }
 

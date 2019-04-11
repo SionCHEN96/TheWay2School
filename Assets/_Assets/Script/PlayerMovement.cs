@@ -6,67 +6,124 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [System.Serializable]
+    public class MoveSettings
+    {
+        public float forwardVel = 4;
+        public float jumpVel = 10;
+        public float distToGrounded = 0.15f;
+        public LayerMask ground;
+    }
 
-    public float speed = 2.0f;
-    public float jumpPower = 280.0f;
+    [System.Serializable]
+    public class PhysSettings
+    {
+        public float downAccel = 0.75f;
+        public GameObject groundDetection;
+    }
 
+    [System.Serializable]
+    public class InputSettings
+    {
+        public float inputDelay = 0.1f;
+        public string FORWARD_AXIS = "Horizontal";
+        public string JUMP_AXIS = "Jump";
+    }
+
+    public MoveSettings moveSetting = new MoveSettings();
+    public PhysSettings physSetting = new PhysSettings();
+    public InputSettings inputSetting = new InputSettings();
+
+
+    //components
     public AudioClip[] movementAudio;
-
     private Animator animator;
-    private Rigidbody rigidbody;
+    private Rigidbody rBody;
+    private CapsuleCollider capsule;
+    Vector3 velocity = Vector3.zero;
 
-    float inputX;
+    float forwardInput, jumpInput,velMult;
+    int direction = 1;
+
+    //state controller
     private bool isRun = false;
     private bool isCrawl = false;
     private bool isUnderTile = false;
-    bool isGrounded = true;
+    
 
+
+    bool Grounded()
+    {
+        if (physSetting.groundDetection.GetComponent<GroundDetection>().isGround)
+        {
+            return true;
+        }
+
+      return  Physics.Raycast(transform.position, Vector3.down, moveSetting.distToGrounded, moveSetting.ground);
+    }
+
+    void GetInput()
+    {
+        forwardInput = Input.GetAxis(inputSetting.FORWARD_AXIS);
+        jumpInput = Input.GetAxisRaw(inputSetting.JUMP_AXIS);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         animator = this.GetComponent<Animator>();
-        rigidbody = this.GetComponent<Rigidbody>();
+        capsule = GetComponent<CapsuleCollider>();
+        if (GetComponent<Rigidbody>())
+        {
+            rBody = this.GetComponent<Rigidbody>();
+        }
+        else
+        {
+            Debug.LogError("Cannot find Rigidbody");
+        }
 
+        forwardInput = velMult= jumpInput = 0;
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        inputX = Input.GetAxis("Horizontal");
-        //isGrounded = CheckGound();
-
-        if (isGrounded)
-        {
-            GetRun();
-            GetCrawl();
-
-            if (Input.GetButton("Jump"))
-            {
-                animator.SetBool("Jump", true);
-                if (isRun)
-                {
-                    rigidbody.AddForce(Vector3.up * jumpPower*1.2f);
-                }
-                else
-                {
-                    rigidbody.AddForce(Vector3.up * jumpPower);
-                }
-                isGrounded = false;
-            }
-            else
-            {
-                animator.SetBool("Jump", false);
-                if (inputX != 0)
-                {
-                    animator.SetBool("Run", true);
-                }
-            }
-        }
-
-        Movement();
+        Debug.Log("is grounded: "+Grounded());
+        //if (jumpInput > 0)
+        //{
+        //    Debug.Log("Jump pressed");
+        //}
+        GetRun();
+        GetCrawl();
+        GetInput();
+       
         CallAnimation();
 
+    }
+
+    private void FixedUpdate()
+    {
+        SetRotation();
+        horizontalMovement();
+        Jump();
+        rBody.velocity = velocity;
+        Debug.Log("velocity x: " + velocity.x);
+        
+    }
+
+
+    void SetRotation()
+    {
+        if (forwardInput > 0)
+        {
+            direction = 1;
+        }
+        else if (forwardInput < 0)
+        {
+            direction = -1;
+        }
+        this.transform.rotation = Quaternion.Euler(0, direction * 90, 0);
     }
 
     void GetRun()
@@ -74,13 +131,15 @@ public class PlayerMovement : MonoBehaviour
         //if is run
         if (!isCrawl)
         {
-            if (Input.GetKey(KeyCode.LeftShift) && inputX != 0)
+            if (Input.GetKey(KeyCode.LeftShift) && forwardInput != 0)
             {
                 isRun = true;
+                velMult= 3;
             }
-            else
+            else if (forwardInput == 0 || !Input.GetKey(KeyCode.LeftShift))
             {
                 isRun = false;
+                velMult= 0;
             }
         }
     }
@@ -90,21 +149,70 @@ public class PlayerMovement : MonoBehaviour
         //if is crawl
         if (!isRun)
         {
-            if ((Input.GetKey(KeyCode.LeftControl) && (inputX != 0)))
+            if ((Input.GetKey(KeyCode.LeftControl) && (forwardInput != 0)))
             {
                 isCrawl = true;
+                velMult = 0.4f;
                 this.GetComponent<CapsuleCollider>().center = new Vector3(0, 4f, 0);
                 this.GetComponent<CapsuleCollider>().height = 9f;
             }
             else if (!Input.GetKey(KeyCode.LeftControl) && !isUnderTile)
             {
                 isCrawl = false;
+                velMult = 1f;
                 this.GetComponent<CapsuleCollider>().center = new Vector3(0, 8f, 0);
                 this.GetComponent<CapsuleCollider>().height = 16f;
             }
         }
     }
 
+    void horizontalMovement()
+    {
+        velMult = 0;
+        if (Mathf.Abs(forwardInput)> inputSetting.inputDelay)
+        {
+            velMult = 1;
+            if (isRun)
+            {
+                velMult = 3;
+            }else if (isCrawl)
+            {
+                velMult = 0.4f;
+            }
+
+            velocity.x = moveSetting.forwardVel * direction*velMult;
+            //Debug.Log(velocity.z);
+        }
+        else
+        {
+            velocity.x = 0f;
+        }
+
+     }
+
+    void Jump()
+    {
+        if (jumpInput > 0 && Grounded())
+        {
+            animator.SetBool("Jump", true);
+            if (isRun)
+            {
+                velocity.y = moveSetting.jumpVel*1.2f;
+            }
+            else
+            {
+                velocity.y = moveSetting.jumpVel;
+            }
+        }else if(jumpInput==0&& Grounded())
+        {
+            velocity.y = 0;
+            animator.SetBool("Jump", false);
+        }
+        else
+        {
+            velocity.y -= physSetting.downAccel;
+        }
+    }
 
     private void CallAnimation()
     {
@@ -114,55 +222,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isRun && !isCrawl)
         {
-            animator.SetFloat("InputX", inputX);
+            animator.SetFloat("InputX", forwardInput);
         }
     }
 
-
-
-    //control movement direction and speed
-    void Movement()
+    void RunAni()
     {
-        int dir = 1;
-        float speedMult = 0;
-
-        if (inputX < -0.5f)
-        {
-            dir = -1;
-        }
-        else if (inputX > 0.5f)
-        {
-            dir = 1;
-        }
-
-        if (isRun)
-        {
-            speedMult = 3;
-
-        }
-        else if (isCrawl)
-        {
-            speedMult = 0.4f;
-        }
-        else if (inputX > 0.5 || inputX < -0.5)
-        {
-            speedMult = 1;
-        }
-
-        if (!isGrounded)
-        {
-            speedMult *= 0.5f;
-        }else if (!isGrounded&&isRun)
-        {
-            speedMult *= 3f;
-        }
-
-
-
-        this.transform.rotation = Quaternion.Euler(0, dir * 90, 0);
-        this.transform.position += new Vector3(dir * 1, 0, 0) * speed * speedMult * Time.deltaTime;
-       // rigidbody.AddForce(new Vector3(dir * 1, 0, 0)*2000f);
+        animator.SetBool("Run", isRun);
     }
+
 
     private void OnTriggerStay(Collider other)
     {
@@ -184,11 +252,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Tile"))
-        {
-            isGrounded = true;
-        }
     }
+
 
 
 }

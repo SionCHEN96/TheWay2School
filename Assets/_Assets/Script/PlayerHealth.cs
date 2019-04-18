@@ -8,12 +8,22 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     public Slider LightPowerSlider;
     public GameObject deathMenu;
+    public GameObject FlashLighting;
+
     private float playerHealth;
-    private bool isDead = false;
+    private bool isDead;
+    private bool flashLightOn;
+    Animator animator;
     bool isOnGame;
+
+
 
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
+
+        isDead = false;
+        flashLightOn = false;
         deathMenu.SetActive(false);
         isOnGame = false;
         Time.timeScale = 1;
@@ -26,7 +36,8 @@ public class PlayerHealth : MonoBehaviour
         {
             isOnGame = true;
         }
-        if (isOnGame)
+
+        if (isOnGame&&flashLightOn)
         {
             LightPowerSlider.value -= Time.deltaTime;
             playerHealth = LightPowerSlider.value;
@@ -49,14 +60,36 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("DeathTile"))
+        if (other.CompareTag("DeathTrigger"))
         {
-            Die();
+            DieFalling();
+        }
+
+        if (other.gameObject.name == "BattTrigger")
+        {
+            Debug.Log(flashLightOn);
+            flashLightOn = true;
+            FlashLighting.GetComponent<LightController>().isLightOn = flashLightOn;
         }
     }
     void Die()
     {
         isDead = true;
+        flashLightOn = false;
+        animator.SetBool("isDead", isDead);
+
+        Invoke("TimeStop", 3f);
+    }
+
+    void DieFalling()
+    {
+        isDead = true;
+        flashLightOn = false;
+        TimeStop();
+    }
+
+    void TimeStop()
+    {
         deathMenu.SetActive(true);
         Time.timeScale = 0;
     }

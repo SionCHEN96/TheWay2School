@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("is grounded: "+Grounded());
+        //Debug.Log("is grounded: "+Grounded());
         //if (jumpInput > 0)
         //{
         //    Debug.Log("Jump pressed");
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalMovement();
         Jump();
         rBody.velocity = velocity;
-        Debug.Log("velocity x: " + velocity.x);
+        //Debug.Log("velocity x: " + velocity.x);
         
     }
 

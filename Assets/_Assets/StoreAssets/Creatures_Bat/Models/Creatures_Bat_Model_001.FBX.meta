@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: a4339c96bd017d44eb56879bcec15408
+timeCreated: 1533814717
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone011
+    100002: Bone011(mirrored)
+    100004: Bone_Chest
+    100006: Bone_COM
+    100008: Bone_Head
+    100010: Bone_L_Ear
+    100012: Bone_L_Wing_001
+    100014: Bone_L_Wing_002
+    100016: Bone_L_Wing_003
+    100018: Bone_L_Wing_004
+    100020: Bone_L_Wing_Mid_001
+    100022: Bone_L_Wing_Mid_002
+    100024: Bone_Mouth
+    100026: Bone_Neck
+    100028: Bone_R_Ear
+    100030: Bone_R_Wing_001
+    100032: Bone_R_Wing_002
+    100034: Bone_R_Wing_003
+    100036: Bone_R_Wing_004
+    100038: Bone_R_Wing_Mid_001
+    100040: Bone_R_Wing_Mid_002
+    100042: Bone_Stomach
+    100044: Bone_Tail
+    100046: connectBone001
+    100048: connectBone002
+    100050: connectBone003
+    100052: //RootNode
+    100054: Dummy_Position
+    100056: Enemy_CaveBat_001
+    400000: Bone011
+    400002: Bone011(mirrored)
+    400004: Bone_Chest
+    400006: Bone_COM
+    400008: Bone_Head
+    400010: Bone_L_Ear
+    400012: Bone_L_Wing_001
+    400014: Bone_L_Wing_002
+    400016: Bone_L_Wing_003
+    400018: Bone_L_Wing_004
+    400020: Bone_L_Wing_Mid_001
+    400022: Bone_L_Wing_Mid_002
+    400024: Bone_Mouth
+    400026: Bone_Neck
+    400028: Bone_R_Ear
+    400030: Bone_R_Wing_001
+    400032: Bone_R_Wing_002
+    400034: Bone_R_Wing_003
+    400036: Bone_R_Wing_004
+    400038: Bone_R_Wing_Mid_001
+    400040: Bone_R_Wing_Mid_002
+    400042: Bone_Stomach
+    400044: Bone_Tail
+    400046: connectBone001
+    400048: connectBone002
+    400050: connectBone003
+    400052: //RootNode
+    400054: Dummy_Position
+    400056: Enemy_CaveBat_001
+    4300000: Enemy_CaveBat_001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Enemy_CaveBat_001
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

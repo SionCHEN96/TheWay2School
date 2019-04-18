@@ -6,8 +6,8 @@ TagManager:
   tags:
   - Tile
   - Batt
-  - DeathTile
   - Trigger
+  - DeathTrigger
   layers:
   - Default
   - TransparentFX

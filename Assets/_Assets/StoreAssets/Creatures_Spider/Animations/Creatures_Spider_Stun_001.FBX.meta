@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 49b3371c52496664bb6a4130b6341be5
+timeCreated: 1533913960
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone Center_Rot
+    100002: Bone COM
+    100004: Bone Head
+    100006: Bone L_Fang 001
+    100008: Bone L_Fang 002
+    100010: Bone L_Leg01_001
+    100012: Bone L_Leg01_002
+    100014: Bone L_Leg01_003
+    100016: Bone L_Leg01_Root
+    100018: Bone L_Leg02_001
+    100020: Bone L_Leg02_002
+    100022: Bone L_Leg02_003
+    100024: Bone L_Leg02_Root
+    100026: Bone L_Leg03_001
+    100028: Bone L_Leg03_002
+    100030: Bone L_Leg03_003
+    100032: Bone L_Leg03_Root
+    100034: Bone L_Leg04_001
+    100036: Bone L_Leg04_002
+    100038: Bone L_Leg04_003
+    100040: Bone L_Leg04_Root
+    100042: Bone R_Fang 001
+    100044: Bone R_Fang 002
+    100046: Bone R_Leg01_001
+    100048: Bone R_Leg01_002
+    100050: Bone R_Leg01_003
+    100052: Bone R_Leg01_Root
+    100054: Bone R_Leg02_001
+    100056: Bone R_Leg02_002
+    100058: Bone R_Leg02_003
+    100060: Bone R_Leg02_Root
+    100062: Bone R_Leg03_001
+    100064: Bone R_Leg03_002
+    100066: Bone R_Leg03_003
+    100068: Bone R_Leg03_Root
+    100070: Bone R_Leg04_001
+    100072: Bone R_Leg04_002
+    100074: Bone R_Leg04_003
+    100076: Bone R_Leg04_Root
+    100078: Bone Stomach
+    100080: connectBone001
+    100082: connectBone002
+    100084: connectBone003
+    100086: connectBone004
+    100088: connectBone005
+    100090: connectBone006
+    100092: connectBone007
+    100094: connectBone008
+    100096: connectBone009
+    100098: connectBone010
+    100100: //RootNode
+    400000: Bone Center_Rot
+    400002: Bone COM
+    400004: Bone Head
+    400006: Bone L_Fang 001
+    400008: Bone L_Fang 002
+    400010: Bone L_Leg01_001
+    400012: Bone L_Leg01_002
+    400014: Bone L_Leg01_003
+    400016: Bone L_Leg01_Root
+    400018: Bone L_Leg02_001
+    400020: Bone L_Leg02_002
+    400022: Bone L_Leg02_003
+    400024: Bone L_Leg02_Root
+    400026: Bone L_Leg03_001
+    400028: Bone L_Leg03_002
+    400030: Bone L_Leg03_003
+    400032: Bone L_Leg03_Root
+    400034: Bone L_Leg04_001
+    400036: Bone L_Leg04_002
+    400038: Bone L_Leg04_003
+    400040: Bone L_Leg04_Root
+    400042: Bone R_Fang 001
+    400044: Bone R_Fang 002
+    400046: Bone R_Leg01_001
+    400048: Bone R_Leg01_002
+    400050: Bone R_Leg01_003
+    400052: Bone R_Leg01_Root
+    400054: Bone R_Leg02_001
+    400056: Bone R_Leg02_002
+    400058: Bone R_Leg02_003
+    400060: Bone R_Leg02_Root
+    400062: Bone R_Leg03_001
+    400064: Bone R_Leg03_002
+    400066: Bone R_Leg03_003
+    400068: Bone R_Leg03_Root
+    400070: Bone R_Leg04_001
+    400072: Bone R_Leg04_002
+    400074: Bone R_Leg04_003
+    400076: Bone R_Leg04_Root
+    400078: Bone Stomach
+    400080: connectBone001
+    400082: connectBone002
+    400084: connectBone003
+    400086: connectBone004
+    400088: connectBone005
+    400090: connectBone006
+    400092: connectBone007
+    400094: connectBone008
+    400096: connectBone009
+    400098: connectBone010
+    400100: //RootNode
+    7400000: Creatures_Spider_Stun_001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Creatures_Spider_Stun_001
+      takeName: Enemy_Spider_StateStun_001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone COM
+        weight: 1
+      - path: Bone COM/Bone Center_Rot
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Head
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Head/connectBone001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Head/connectBone001/Bone L_Fang 001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Head/connectBone001/Bone L_Fang 001/Bone
+          L_Fang 002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Head/connectBone002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Head/connectBone002/Bone R_Fang 001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Head/connectBone002/Bone R_Fang 001/Bone
+          R_Fang 002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/Bone Stomach
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone003/Bone L_Leg01_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone003/Bone L_Leg01_Root/Bone L_Leg01_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone003/Bone L_Leg01_Root/Bone L_Leg01_001/Bone
+          L_Leg01_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone003/Bone L_Leg01_Root/Bone L_Leg01_001/Bone
+          L_Leg01_002/Bone L_Leg01_003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone004
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone004/Bone L_Leg02_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone004/Bone L_Leg02_Root/Bone L_Leg02_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone004/Bone L_Leg02_Root/Bone L_Leg02_001/Bone
+          L_Leg02_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone004/Bone L_Leg02_Root/Bone L_Leg02_001/Bone
+          L_Leg02_002/Bone L_Leg02_003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone005
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone005/Bone L_Leg03_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone005/Bone L_Leg03_Root/Bone L_Leg03_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone005/Bone L_Leg03_Root/Bone L_Leg03_001/Bone
+          L_Leg03_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone005/Bone L_Leg03_Root/Bone L_Leg03_001/Bone
+          L_Leg03_002/Bone L_Leg03_003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone006
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone006/Bone L_Leg04_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone006/Bone L_Leg04_Root/Bone L_Leg04_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone006/Bone L_Leg04_Root/Bone L_Leg04_001/Bone
+          L_Leg04_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone006/Bone L_Leg04_Root/Bone L_Leg04_001/Bone
+          L_Leg04_002/Bone L_Leg04_003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone007
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone007/Bone R_Leg01_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone007/Bone R_Leg01_Root/Bone R_Leg01_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone007/Bone R_Leg01_Root/Bone R_Leg01_001/Bone
+          R_Leg01_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone007/Bone R_Leg01_Root/Bone R_Leg01_001/Bone
+          R_Leg01_002/Bone R_Leg01_003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone008
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone008/Bone R_Leg02_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone008/Bone R_Leg02_Root/Bone R_Leg02_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone008/Bone R_Leg02_Root/Bone R_Leg02_001/Bone
+          R_Leg02_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone008/Bone R_Leg02_Root/Bone R_Leg02_001/Bone
+          R_Leg02_002/Bone R_Leg02_003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone009
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone009/Bone R_Leg03_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone009/Bone R_Leg03_Root/Bone R_Leg03_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone009/Bone R_Leg03_Root/Bone R_Leg03_001/Bone
+          R_Leg03_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone009/Bone R_Leg03_Root/Bone R_Leg03_001/Bone
+          R_Leg03_002/Bone R_Leg03_003
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone010
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone010/Bone R_Leg04_Root
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone010/Bone R_Leg04_Root/Bone R_Leg04_001
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone010/Bone R_Leg04_Root/Bone R_Leg04_001/Bone
+          R_Leg04_002
+        weight: 1
+      - path: Bone COM/Bone Center_Rot/connectBone010/Bone R_Leg04_Root/Bone R_Leg04_001/Bone
+          R_Leg04_002/Bone R_Leg04_003
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

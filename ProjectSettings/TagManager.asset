@@ -8,6 +8,7 @@ TagManager:
   - Batt
   - Trigger
   - DeathTrigger
+  - Light
   layers:
   - Default
   - TransparentFX

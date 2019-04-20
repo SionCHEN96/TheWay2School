@@ -11,6 +11,7 @@ public class TipsControllerLvIntro : MonoBehaviour
 
     private void Start()
     {
+        gameObject.SetActive(true);
         flashLightIcon.SetActive(false);
     }
 

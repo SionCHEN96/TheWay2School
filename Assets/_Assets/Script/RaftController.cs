@@ -6,7 +6,7 @@ public class RaftController : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject player;
-    float posDist;
+
     void Start()
     {
         player = GameObject.Find("Player");

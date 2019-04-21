@@ -13,13 +13,13 @@ public class ShowShadowObject : MonoBehaviour
     {
         showSelf = false;
         player = GameObject.Find("Player");
-        Debug.Log("find player");
+        //Debug.Log("find player");
     }
 
 
     private void Update()
     {
-        
+
         if (player.GetComponent<PlayerHealth>().flashLightOn == -1)
         {
             showSelf = true;
@@ -36,14 +36,17 @@ public class ShowShadowObject : MonoBehaviour
         {
             gameObject.GetComponent<Light>().enabled = showSelf;
         }
-        else
+
+
+        if (gameObject.CompareTag("Tile"))
         {
             gameObject.GetComponent<MeshRenderer>().enabled = showSelf;
+            gameObject.GetComponent<BoxCollider>().enabled = showSelf;
+        }
 
-            if (gameObject.CompareTag("Tile"))
-            {
-                gameObject.GetComponent<BoxCollider>().enabled = showSelf;
-            }
+        if (gameObject.CompareTag("Envi"))
+        {
+            gameObject.GetComponent<MeshRenderer>().enabled = showSelf;
         }
 
     }

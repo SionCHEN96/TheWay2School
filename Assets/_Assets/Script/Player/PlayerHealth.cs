@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     //game control attributes
     public int flashLightOn;
     private bool isOnGame;
-    private bool enableSwitch;
+    public bool enableSwitch;
     private bool isDead;
     
     //player state floats

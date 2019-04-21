@@ -9,6 +9,7 @@ TagManager:
   - Trigger
   - DeathTrigger
   - Light
+  - Envi
   layers:
   - Default
   - TransparentFX

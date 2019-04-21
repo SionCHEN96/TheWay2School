@@ -84,6 +84,9 @@
     <Compile Include="Assets\_Assets\Script\TileController.cs" />
     <Compile Include="Assets\_Assets\Script\Tips\TipsControllerLvFlashlight.cs" />
     <Compile Include="Assets\_Assets\Script\Tips\TipsControllerLvIntro.cs" />
+    <Compile Include="Assets\_Assets\StoreAssets\LowPoly Particles\Demo\Scripts\CameraRotate.cs" />
+    <Compile Include="Assets\_Assets\StoreAssets\LowPoly Particles\Demo\Scripts\Demo.cs" />
+    <Compile Include="Assets\_Assets\StoreAssets\LowPoly Particles\Demo\Scripts\UIEventHandler.cs" />
     <Compile Include="Assets\Packages\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\Packages\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
     <Compile Include="Assets\Packages\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
@@ -193,10 +196,12 @@
     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Packages\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
+    <None Include="Assets\_Assets\Materials\Test.shader" />
     <None Include="Assets\Packages\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Packages\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
     <None Include="Assets\Packages\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\Packages\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
+    <None Include="Assets\_Assets\StoreAssets\LowPoly Particles\Resources\BaseColor.shader" />
     <None Include="Assets\Packages\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
     <None Include="Assets\Packages\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
     <None Include="Assets\Packages\ProCore\ProBuilder\About\changelog.txt" />
@@ -234,11 +239,13 @@
     <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
     <None Include="Assets\Packages\ProCore\ProBuilder\About\pc_AboutEntry_ProBuilder.txt" />
     <None Include="Assets\Packages\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\_Assets\StoreAssets\LowPoly Particles\ReadMe.txt" />
     <None Include="Assets\Packages\ProCore\ProBuilder\Shader\pb_VertexShader.shader" />
     <None Include="Assets\Packages\ProCore\ProBuilder\Shader\pb_NormalPreview.shader" />
     <None Include="Assets\Packages\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
     <None Include="Assets\Packages\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
     <None Include="Assets\Packages\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\_Assets\StoreAssets\LowPoly Particles\Resources\BaseAdditive.shader" />
     <None Include="Assets\Packages\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Packages\ProCore\ProBuilder\Shader\pb_ScrollHighlight.shader" />
     <None Include="Assets\Packages\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

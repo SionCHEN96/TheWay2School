@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5062845087151428178}
   - component: {fileID: 7122060065314348871}
   - component: {fileID: 6564592157908243029}
-  - component: {fileID: 4147954150518394936}
+  - component: {fileID: 6260952997367697361}
   m_Layer: 10
   m_Name: TileFence02
   m_TagString: Tile
@@ -36,7 +36,6 @@ Transform:
   - {fileID: 4555698647235152582}
   - {fileID: 7558126213622716676}
   - {fileID: 6690968996910150858}
-  - {fileID: 4293192068383052384}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -98,88 +97,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 400, y: 150, z: 100}
   m_Center: {x: 0, y: -25, z: 0}
---- !u!54 &4147954150518394936
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3440656319725644472}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 122
-  m_CollisionDetection: 0
---- !u!1 &5511283537536240512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4293192068383052384}
-  - component: {fileID: 3510010178738147444}
-  - component: {fileID: 4460499086594677127}
-  - component: {fileID: 6423714460400633828}
-  m_Layer: 0
-  m_Name: FallTrigger
-  m_TagString: Trigger
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4293192068383052384
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5511283537536240512}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 74, z: 0}
-  m_LocalScale: {x: 300.00018, y: 150, z: 80.000046}
-  m_Children: []
-  m_Father: {fileID: 3346751303236328644}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3510010178738147444
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5511283537536240512}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &4460499086594677127
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5511283537536240512}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6423714460400633828
+--- !u!114 &6260952997367697361
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5511283537536240512}
+  m_GameObject: {fileID: 3440656319725644472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6772851e33e5c8e499aa0a93956e6905, type: 3}
+  m_Script: {fileID: 11500000, guid: 436f4036bb6b05d48bba6bf5e6c26257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallDelay: 0
 --- !u!1001 &4555698647235023968
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,7 +6,6 @@ using UnityEngine;
 public class TipsControllerLvFlashlight : MonoBehaviour
 {
     public Text tipText;
-    public Text themeName;
     public GameObject flashLightIcon;
 
     private void Start()
@@ -20,9 +19,7 @@ public class TipsControllerLvFlashlight : MonoBehaviour
 
         if (gameObject.name == "LightSwitchTrigger" && other.name == "Player")
         {
-            tipText.color = new Color(233, 238, 125, 255);
             tipText.text = "You have fixed the flashlight\nPress  C  to turn it";
-            themeName.text = "The 2 day to school\nThe Magic of Light";
             SetTipToOne();
         }
 

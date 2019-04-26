@@ -20,6 +20,7 @@ public class TipsControllerLvIntro : MonoBehaviour
         if (gameObject.name == "WelcomeTrigger" && other.name == "Player")
         {
             tipText.color = new Color(233, 238, 125, 0);
+            themeName.color = new Color(255, 255, 255);
             themeName.text = "The 1 day to school\nThe Broken Flashlight";
             tipText.text = "Press  LEFT and RIGHT  to move";
             SetTipToOne();

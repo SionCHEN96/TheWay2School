@@ -8905,10 +8905,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 664520071, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
-      propertyPath: m_Constraints
-      value: 24
-      objectReference: {fileID: 0}
+    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: FlashLighting
+      value: 
+      objectReference: {fileID: 1956199435}
+    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: LightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
+    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: deathMenu
+      value: 
+      objectReference: {fileID: 1182380398}
+    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: flashLighting
+      value: 
+      objectReference: {fileID: 1956199435}
+    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: lightPowerSlider
+      value: 
+      objectReference: {fileID: 743278213}
     - target: {fileID: 664520068, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
       propertyPath: m_Center.y
       value: 8.2
@@ -8941,6 +8962,16 @@ PrefabInstance:
       propertyPath: physSetting.groundDetection
       value: 
       objectReference: {fileID: 1309627986}
+    - target: {fileID: 7126806387333803570, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126806387333803570, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1491811859, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
       propertyPath: m_DynamicOccludee
       value: 1
@@ -8969,6 +9000,10 @@ PrefabInstance:
       propertyPath: m_AABB.m_Extent.z
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 664520071, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
+      propertyPath: m_Constraints
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 2029361589959820006, guid: f70cda85a4489a9438cb120b8fa67622,
         type: 3}
       propertyPath: m_Center.y
@@ -8994,41 +9029,6 @@ PrefabInstance:
       propertyPath: m_SkinWidth
       value: 0.04
       objectReference: {fileID: 0}
-    - target: {fileID: 7126806387333803570, guid: f70cda85a4489a9438cb120b8fa67622,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7126806387333803570, guid: f70cda85a4489a9438cb120b8fa67622,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
-        type: 3}
-      propertyPath: FlashLighting
-      value: 
-      objectReference: {fileID: 1956199435}
-    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
-        type: 3}
-      propertyPath: LightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
-    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
-        type: 3}
-      propertyPath: deathMenu
-      value: 
-      objectReference: {fileID: 1182380398}
-    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
-        type: 3}
-      propertyPath: flashLighting
-      value: 
-      objectReference: {fileID: 1956199435}
-    - target: {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622,
-        type: 3}
-      propertyPath: lightPowerSlider
-      value: 
-      objectReference: {fileID: 743278213}
     m_RemovedComponents:
     - {fileID: 664520071, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
     - {fileID: 2029361589959820006, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
@@ -10537,17 +10537,17 @@ PrefabInstance:
     - target: {fileID: 4481826503110780620, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7300214
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4481826503110780620, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.0099998
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4481826503110780620, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 4481826503110780620, guid: ebbc0288aa28df54cb342e968aebc41f,
         type: 3}
@@ -23836,27 +23836,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_Text
-      value: 'The 1 day to school
-
-        The Broken Flashlight'
+      propertyPath: m_MaxValue
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_Color.r
-      value: 1
+      propertyPath: m_Value
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 4015352818256744602, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4288055582963331523, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -23888,20 +23881,27 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 48
       objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_MaxValue
-      value: 40
+      propertyPath: m_Text
+      value: 'The 1 day to school
+
+        The Broken Flashlight'
       objectReference: {fileID: 0}
-    - target: {fileID: 4288055582461748430, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_Value
-      value: 40
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4015352818256744602, guid: daf457a0dcc516b42a1c2c41f63186b0,
+    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4288055583313817040, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -24048,6 +24048,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 6790508247886905875, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StartScene
+      objectReference: {fileID: 0}
     - target: {fileID: 1108227829477007158, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -24132,6 +24137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Colors.m_NormalColor.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948415654127514480, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StartScene
       objectReference: {fileID: 0}
     - target: {fileID: 8419963579630818530, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}

@@ -110,12 +110,6 @@
     <Compile Include="Assets\Packages\ProCore\ProBuilder\Editor\pb_MissingScriptEditor.cs" />
     <Compile Include="Assets\Packages\ProCore\ProBuilder\Editor\pb_Preferences.cs" />
     <Compile Include="Assets\Packages\ProCore\ProBuilder\Editor\pb_ScenePostProcessor.cs" />
-    <Compile Include="Assets\Packages\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-    <Compile Include="Assets\Packages\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
-    <Compile Include="Assets\Packages\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
-    <Compile Include="Assets\Packages\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
-    <Compile Include="Assets\Packages\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
-    <Compile Include="Assets\Packages\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/HKBU SEM8/TheWayToSchool/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

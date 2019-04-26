@@ -137,7 +137,13 @@ public class PlayerHealth : MonoBehaviour
             enableSwitch = true;
             //Debug.Log("Enable switch:" + enableSwitch);
         }
+
+        if (other.name == "InsectTrigger")
+        {
+            Die();
+        }
     }
+
     void Die()
     {
         isDead = true;

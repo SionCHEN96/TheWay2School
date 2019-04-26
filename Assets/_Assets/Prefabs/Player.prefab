@@ -112,7 +112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &387371393
 Transform:
   m_ObjectHideFlags: 0
@@ -367,6 +367,7 @@ MonoBehaviour:
   deathMenu: {fileID: 0}
   flashLighting: {fileID: 0}
   flashLightOn: 0
+  enableSwitch: 0
 --- !u!1 &816080705
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +907,7 @@ GameObject:
   - component: {fileID: 1491811858}
   - component: {fileID: 1491811859}
   m_Layer: 9
-  m_Name: Mesh_Male_ncl1_1
+  m_Name: BoyMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

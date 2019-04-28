@@ -6041,7 +6041,8 @@ PrefabInstance:
       propertyPath: near clip plane
       value: 0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1683296967950347830, guid: ebbc0288aa28df54cb342e968aebc41f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ebbc0288aa28df54cb342e968aebc41f, type: 3}
 --- !u!1001 &927637306
 PrefabInstance:
@@ -12856,7 +12857,7 @@ PrefabInstance:
     - target: {fileID: 6860908628535149647, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3285522341391943157, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -12998,7 +12999,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'You are absent from school today
 
-        Do not lose you way next time'
+        Do not lose your way next time'
       objectReference: {fileID: 0}
     - target: {fileID: 7143267758577090893, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}

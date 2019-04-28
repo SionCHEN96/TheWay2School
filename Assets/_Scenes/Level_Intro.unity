@@ -24099,7 +24099,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'You are absent from school today
 
-        Do not lose you way next time'
+        Do not lose your way next time'
       objectReference: {fileID: 0}
     - target: {fileID: 7143267758577090893, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -24205,6 +24205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994848163851060608, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: Restart
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0, type: 3}

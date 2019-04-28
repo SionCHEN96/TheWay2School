@@ -19473,7 +19473,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'You are absent from school today
 
-        Do not lose you way next time'
+        Do not lose your way next time'
       objectReference: {fileID: 0}
     - target: {fileID: 7143267758577090893, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}

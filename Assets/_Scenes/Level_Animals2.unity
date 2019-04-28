@@ -13001,7 +13001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d920c43f91f65419930e264d433668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 4
+  level: 5
 --- !u!1 &1438039988
 GameObject:
   m_ObjectHideFlags: 0
@@ -19714,7 +19714,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'You are absent from school today
 
-        Do not lose you way next time'
+        Do not lose your way next time'
       objectReference: {fileID: 0}
     - target: {fileID: 7143267758577090893, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}

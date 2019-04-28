@@ -14,7 +14,7 @@ public class LightController : MonoBehaviour
     void Start()
     {
         mapValue = lightPowerSlider.value / 20.0f;
-        gameObject.GetComponent<Light>().spotAngle = 90f;
+        gameObject.GetComponent<Light>().spotAngle = 100f;
         gameObject.GetComponent<Light>().intensity = 5f;
     }
 
@@ -23,12 +23,12 @@ public class LightController : MonoBehaviour
     {
         if (isLightOn)
         {
-            gameObject.GetComponent<Light>().spotAngle = 90 * Mathf.Cos((Mathf.PI / 2) * (1 - lightPowerSlider.value / mapValue / 20));
+            gameObject.GetComponent<Light>().spotAngle = 100 * Mathf.Cos((Mathf.PI / 2) * (1 - lightPowerSlider.value / mapValue / 20));
             gameObject.GetComponent<Light>().intensity = lightPowerSlider.value / mapValue / 5f + 1f;
         }
         else
         {
-            gameObject.GetComponent<Light>().spotAngle = 90f;
+            gameObject.GetComponent<Light>().spotAngle = 100f;
             gameObject.GetComponent<Light>().intensity = 5f;
         }
 

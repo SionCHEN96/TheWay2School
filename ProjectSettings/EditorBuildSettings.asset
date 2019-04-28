@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Level_Animals2.unity
     guid: 7aa16c2dcdb0b2140972bdd3c787a5cb
+  - enabled: 1
+    path: Assets/_Scenes/Level_Winter.unity
+    guid: 5f35e026a69bf4c48bdd2e373732d847
+  - enabled: 1
+    path: Assets/_Scenes/EndScene.unity
+    guid: d99eeba704730a94282c8e2f0bceb61d
   m_configObjects: {}

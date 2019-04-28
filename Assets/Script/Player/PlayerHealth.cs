@@ -65,6 +65,7 @@ public class PlayerHealth : MonoBehaviour
             if (flashLightOn == 1)
             {
                 lightPowerSlider.value -= Time.deltaTime;
+                //Debug.Log(lightPowerSlider.value);
             }
 
 
@@ -78,6 +79,7 @@ public class PlayerHealth : MonoBehaviour
         {
             flashLighting.gameObject.GetComponent<Light>().spotAngle = 90 * Mathf.Cos((Mathf.PI / 2) * (1 - lightPowerSlider.value / mapValue / 20));
             flashLighting.gameObject.GetComponent<Light>().intensity = lightPowerSlider.value / mapValue / 5f + 1f;
+            //Debug.Log(flashLighting.gameObject.GetComponent<Light>().spotAngle);
         }
         else if(flashLightOn==-1&&!enableSwitch)
         {
@@ -144,6 +146,7 @@ public class PlayerHealth : MonoBehaviour
             }
             else
             {
+                //Debug.Log("Die");
                 Die();
             }
         }
@@ -177,8 +180,16 @@ public class PlayerHealth : MonoBehaviour
         TimeStop();
     }
 
+    void SaveDieTimes()
+    {
+        int loseTime = PlayerPrefs.GetInt("LoseTimes");
+        PlayerPrefs.SetInt("LoseTimes", loseTime + 1);
+        Debug.Log(loseTime + 1);
+    }
+
     void TimeStop()
     {
+        SaveDieTimes();
         deathMenu.SetActive(true);
         Time.timeScale = 0;
     }

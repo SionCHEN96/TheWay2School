@@ -1375,7 +1375,7 @@ PrefabInstance:
     - target: {fileID: 5552149260844413317, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_Text
-      value: 'The 5 day to school
+      value: 'The 6 day to school
 
         Winter'
       objectReference: {fileID: 0}
@@ -1562,7 +1562,7 @@ PrefabInstance:
     - target: {fileID: 6860908628535149647, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3285522341391943157, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -1806,10 +1806,20 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.49056602
       objectReference: {fileID: 0}
+    - target: {fileID: 3994848163851060608, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 8988569441880251666, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082876714705623575, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_Text
+      value: Restart
       objectReference: {fileID: 0}
     - target: {fileID: 4288055582215156737, guid: daf457a0dcc516b42a1c2c41f63186b0,
         type: 3}
@@ -3318,7 +3328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d920c43f91f65419930e264d433668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 5
+  level: 6
 --- !u!65 &753409822
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -97,6 +97,7 @@
     <Compile Include="Assets\Script\TileController.cs" />
     <Compile Include="Assets\Script\Tips\TipsControllerLvAnimals.cs" />
     <Compile Include="Assets\Script\Tips\TipsControllerLvAnimals2.cs" />
+    <Compile Include="Assets\Script\Tips\TipsControllerLvFallingStone.cs" />
     <Compile Include="Assets\Script\Tips\TipsControllerLvFlashlight.cs" />
     <Compile Include="Assets\Script\Tips\TipsControllerLvIntro.cs" />
     <Compile Include="Assets\Script\Tips\TipsControllerLvWinter.cs" />

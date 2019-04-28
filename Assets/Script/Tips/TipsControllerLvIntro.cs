@@ -6,7 +6,6 @@ using UnityEngine;
 public class TipsControllerLvIntro : MonoBehaviour
 {
     public Text tipText;
-    public Text themeName;
     public GameObject flashLightIcon;
 
     private void Start()
@@ -19,30 +18,24 @@ public class TipsControllerLvIntro : MonoBehaviour
     {   //welcome
         if (gameObject.name == "WelcomeTrigger" && other.name == "Player")
         {
-            tipText.color = new Color(233, 238, 125, 0);
-            themeName.color = new Color(255, 255, 255);
-            themeName.text = "The 1 day to school\nThe Broken Flashlight";
             tipText.text = "Press  LEFT and RIGHT  to move";
             SetTipToOne();
         }
 
         if (gameObject.name == "RunTrigger" && other.name == "Player")
         {
-            tipText.color = new Color(233, 238, 125, 0);
             tipText.text = "Hold  SHIFT  to Run";
             SetTipToOne();
         }
 
         if (gameObject.name == "JumpTrigger" && other.name == "Player")
         {
-            tipText.color = new Color(233, 238, 125, 0);
             tipText.text = "Press  SPACE  to Jump";
             SetTipToOne();
         }
 
         if (gameObject.name == "CrawlTrigger" && other.name == "Player")
         {
-            tipText.color =new Color(233, 238, 125, 0);
             tipText.text = "Hold  CTRL  to Crawl";
             SetTipToOne();
         }

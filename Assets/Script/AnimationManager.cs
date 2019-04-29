@@ -10,6 +10,7 @@ public class AnimationManager : MonoBehaviour
     public string nextScene;
     void Start()
     {
+        Invoke("LoadStartLevel", 28f);
     }
 
     // Update is called once per frame

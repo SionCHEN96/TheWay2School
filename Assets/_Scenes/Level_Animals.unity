@@ -12843,6 +12843,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: Restart
       objectReference: {fileID: 0}
+    - target: {fileID: 4288055581920649712, guid: daf457a0dcc516b42a1c2c41f63186b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3839833028488560144, guid: daf457a0dcc516b42a1c2c41f63186b0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: daf457a0dcc516b42a1c2c41f63186b0, type: 3}

@@ -22,8 +22,7 @@ public class PlayerHealthSnow : MonoBehaviour
 
     Animator animator;
 
-    //child gameObjects
-
+    public bool IsOnGame { get => isOnGame; set => isOnGame = value; }
 
 
     void Start()

@@ -88,6 +88,10 @@
     <Compile Include="Assets\Script\Old\LvHK\TipsControllerLvHK.cs" />
     <Compile Include="Assets\Script\Old\LvHK\TrafficLight.cs" />
     <Compile Include="Assets\Script\Player\GroundDetection.cs" />
+    <Compile Include="Assets\Script\Player\LandingSoundController.cs" />
+    <Compile Include="Assets\Script\Player\LandingSoundControllerSnow.cs" />
+    <Compile Include="Assets\Script\Player\LightSoundController.cs" />
+    <Compile Include="Assets\Script\Player\LightSoundControllerSnow.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Script\Player\PlayerHealthSnow.cs" />
     <Compile Include="Assets\Script\Player\PlayerMovement.cs" />

@@ -39,6 +39,7 @@ public class PlayerMovementSnow : MonoBehaviour
     //components
     public GameObject winMenu;
     public AudioClip[] movementAudio;
+    AudioSource audioSource;
     private Animator animator;
     private Rigidbody rBody;
     private CapsuleCollider capsule;
@@ -76,6 +77,7 @@ public class PlayerMovementSnow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         animator = this.GetComponent<Animator>();
         capsule = GetComponent<CapsuleCollider>();
         if (GetComponent<Rigidbody>())
@@ -104,6 +106,7 @@ public class PlayerMovementSnow : MonoBehaviour
             GetInput();
        
         CallAnimation();
+        PlayAudio();
 
     }
 
@@ -206,6 +209,12 @@ public class PlayerMovementSnow : MonoBehaviour
         if (jumpInput > 0 && Grounded())
         {
             animator.SetBool("Jump", true);
+
+            //play audio
+            audioSource.clip = movementAudio[2];
+            audioSource.loop = false;
+            audioSource.Play();
+
             if (isRun)
             {
                 velocity.y = moveSetting.jumpVel*1.2f;
@@ -239,6 +248,43 @@ public class PlayerMovementSnow : MonoBehaviour
         if (isWin)
         {
             animator.SetBool("isWin", isWin);
+        }
+    }
+
+    void PlayAudio()
+    {
+        if (isRun && Grounded())
+        {
+            audioSource.clip = movementAudio[1];
+            audioSource.loop = true;
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }else if (isCrawl)
+        {
+            audioSource.loop = false;
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
+        else if (!isCrawl && !isRun && Grounded() && forwardInput != 0)
+        {
+            audioSource.clip = movementAudio[0];
+            audioSource.loop = true;
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else if (forwardInput == 0 || (!Grounded() && jumpInput == 0))
+        {
+            audioSource.loop = false;
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
         }
     }
 

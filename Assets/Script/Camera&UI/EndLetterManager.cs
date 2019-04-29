@@ -13,8 +13,8 @@ public class EndLetterManager : MonoBehaviour
         int loseTimes = PlayerPrefs.GetInt("LoseTimes");
         text1 =
             "Congratulations on your success of finding the way to school. \n \n" +
-            "You lost the way " + loseTimes + " times during the five day of your journey.\n \n" +
-            "You can retry as many times as you can to finally got to school. \n \n" +
+            "You lost the way " + loseTimes + " times during the six day of your journey.\n \n" +
+            "You can retry as many times as you can to finally find the way. \n \n" +
             "However, for the students in some areas of Jiangxi, China, they have to " +
             "suffer from the dark and danger every day.\n \n";
 

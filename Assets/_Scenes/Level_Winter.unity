@@ -924,6 +924,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d03d0258198e7c640844449f9aacd724, type: 3}
+--- !u!1 &184405597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7619611870158701549, guid: f70cda85a4489a9438cb120b8fa67622,
+    type: 3}
+  m_PrefabInstance: {fileID: 797333017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &184405599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184405597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81913098382b00d4eaef971c613cbc13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186698869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,11 +3861,43 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5433900674097040358, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: m_Pitch
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433900674097040358, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433900674097040358, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.758
+      objectReference: {fileID: 0}
+    - target: {fileID: 6253783438810828282, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737646305795057973, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825491291019758964, guid: f70cda85a4489a9438cb120b8fa67622,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 664520071, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
     - {fileID: 2029361589959820006, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
     - {fileID: 664520067, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
     - {fileID: 726434536981678056, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
+    - {fileID: 6253783438810828282, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
+    - {fileID: 6825491291019758964, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f70cda85a4489a9438cb120b8fa67622, type: 3}
 --- !u!1001 &825217156
 PrefabInstance:
@@ -5622,7 +5672,10 @@ MonoBehaviour:
     FORWARD_AXIS: Horizontal
     JUMP_AXIS: Jump
   winMenu: {fileID: 1105641531}
-  movementAudio: []
+  movementAudio:
+  - {fileID: 8300000, guid: d33aba57baa6fc64db9feb8ed82e8942, type: 3}
+  - {fileID: 8300000, guid: b9c6823dff07d4e438fa0d96fc4a9dd3, type: 3}
+  - {fileID: 8300000, guid: eb2840f10e87b1947a0bc072371de69e, type: 3}
 --- !u!1001 &1361681765
 PrefabInstance:
   m_ObjectHideFlags: 0

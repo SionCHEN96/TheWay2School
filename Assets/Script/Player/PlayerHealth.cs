@@ -22,12 +22,12 @@ public class PlayerHealth : MonoBehaviour
 
     Animator animator;
 
-    //child gameObjects
 
-
+    public bool IsOnGame { get => isOnGame; set => isOnGame = value; }
 
     void Start()
     {
+
         
         mapValue = lightPowerSlider.value / 20.0f;
         animator = gameObject.GetComponent<Animator>();
@@ -105,6 +105,8 @@ public class PlayerHealth : MonoBehaviour
             {
                 flashLighting.SetActive(true);
             }
+
+
             flashLightOn = -flashLightOn;
         }
     }
@@ -190,8 +192,11 @@ public class PlayerHealth : MonoBehaviour
     void TimeStop()
     {
         SaveDieTimes();
+
+
         deathMenu.SetActive(true);
         Time.timeScale = 0;
+
     }
 
 }
